@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxurious Timer Web App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="confetti-canvas"></canvas>
+    <div class="container" id="container">
+        <div class="clock" id="clock">
+            <span id="timer-text">00:45</span>
+        </div>
+        <div class="buttons">
+            <button id="start-stop" class="button">Start</button>
+            <button id="reset" class="button">Reset</button>
+        </div>
+        <div class="instruction">Click on the timer to change the time!</div>
+    </div>
+  <!-- Add this modal dialog structure below the other elements -->
+  
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>Change Timer Value</h2>
+        <input type="number" id="new-timer-value" placeholder="Enter time in seconds" min="1">
+        <button id="confirm-change" class="button">Set Timer</button>
+    </div>
+</div>
+<!-- Add this section below the timer display -->
+<div class="preset-times">
+    <h3>Select a Predefined Time:</h3>
+    <button class="preset-button" data-time="45">45 Seconds</button>
+    <button class="preset-button" data-time="120">2 Minutes</button>
+    <button class="preset-button" data-time="300">5 Minutes</button>
+</div>
+
+    <audio id="tick-sound" src="tick.mp3" preload="auto"></audio>
+    <audio id="alarm-sound" src="alarm.mp3" preload="auto"></audio>
+    <script src="confetti.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
