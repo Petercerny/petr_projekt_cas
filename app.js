@@ -51,6 +51,10 @@ function countdown() {
     }
 }
 
+
+function onPlayerReady(event) {
+  // Optionally start video or customize further
+}
 // Function to reset the timer
 function resetTimer() {
     clearInterval(timerInterval);
@@ -119,3 +123,4 @@ timerText.addEventListener('click', changeTimerValue);
 
 // Initialize the display with the default time
 updateDisplay();
+
