@@ -2,19 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timer Web App</title>
+    <title>Luxurious Timer Web App</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-     <nav class="navbar">
+  <nav class="navbar">
     <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="https://codepen.io/Petr-the-looper/pen/PoMKJWN">Home</a></li>
         <li><a href="https://codepen.io/Petr-the-looper/pen/Yzmeadz">Pomodoro</a></li>
         <li><a href="https://codepen.io/yourusername/pen/page3">Timer</a></li>
         <li><a href="https://codepen.io/yourusername/pen/page4">Contact</a></li>
     </ul>
 </nav>
+
     <canvas id="confetti-canvas"></canvas>
     <div class="container" id="container">
         <div class="clock" id="clock">
@@ -36,12 +37,22 @@
         <button id="confirm-change" class="button">Set Timer</button>
     </div>
 </div>
+
 <!-- Add this section below the timer display -->
+<div class="video-wrapper">
+  <iframe
+    src="https://www.youtube-nocookie.com/embed/jfKfPfyJRdk?si=L4PEvlomeuB_cUDp"
+    allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>
+
+
 <div class="preset-times">
     <h3>Select a Predefined Time:</h3>
     <button class="preset-button" data-time="45">45 Seconds</button>
-    <button class="preset-button" data-time="120">2 Minutes</button>
-    <button class="preset-button" data-time="300">5 Minutes</button>
+    <button class="preset-button" data-time="1500">25 Minutes</button>
+    <button class="preset-button" data-time="2700">45 Minutes</button>
 </div>
 
     <audio id="tick-sound" src="tick.mp3" preload="auto"></audio>
